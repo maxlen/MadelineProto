@@ -89,6 +89,7 @@ class Logger
 
     public function logger($param, $level = self::NOTICE, $file = null)
     {
+        return;
         if ($level > $this->level || $this->mode === 0) {
             return false;
         }
